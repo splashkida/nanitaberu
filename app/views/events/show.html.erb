@@ -1,4 +1,5 @@
 <p>
   <strong>タイトル</strong>
   <%= @event.title %>
+  <td><%= link_to 'Edit', edit_event_path(@event.id), method: :get %></td>
 </p>
