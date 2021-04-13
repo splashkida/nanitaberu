@@ -2,4 +2,6 @@
   <strong>タイトル</strong>
   <%= @event.title %>
   <td><%= link_to 'Edit', edit_event_path(@event.id), method: :get %></td>
+  <td><%= link_to 'Destroy',root_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <%= link_to 'Back', root_path %>
 </p>
